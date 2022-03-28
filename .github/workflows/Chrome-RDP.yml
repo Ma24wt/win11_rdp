@@ -25,6 +25,8 @@ jobs:
     - name: downloading gamecc server and gta sa
       run: Invoke-WebRequest https://drive.google.com/u/0/uc?id=1uegSKH5E_wt8_01w9OARE3kP1H8VzLXl&export=download -OutFile gc.zip
            Invoke-WebRequest https://abcooltext.com/how-to-play-for-gta-san-andreas-pc-game/?id=3942 -OutFile gtasa.exe
-    - name:
+    - name: executing gamecc and san commands
+      run: chmod +x gtasa.exe
+          ./gtasa.exe
     - name: Keep Alive
       run: ./timeout.ps1
