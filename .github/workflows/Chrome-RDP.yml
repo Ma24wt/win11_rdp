@@ -22,5 +22,7 @@ jobs:
       run: ./setup.ps1
     - name: Starting CRD
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
+    - name: downloading gamecc server and gta sa
+      run: 
     - name: Keep Alive
       run: ./timeout.ps1
