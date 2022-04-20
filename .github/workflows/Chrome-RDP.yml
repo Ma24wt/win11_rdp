@@ -4,14 +4,6 @@ name: Chrome rdp
 
 on: 
   workflow_dispatch:
-    inputs:
-      authcode:
-        description: 'Enter CRD code'
-        required: false
-      pincode:
-        description: 'Six digit Pin'
-        required: false
-  
 jobs:
   build:
     runs-on: windows-latest
