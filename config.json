@@ -45,7 +45,7 @@
         "enabled": false,
         "cache": true,
         "loader": null,
-        "platform": "AMD",
+        "platform": "INTEL",
         "adl": true,
         "cn/0": false,
         "cn-lite/0": false
